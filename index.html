@@ -1,0 +1,16 @@
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+
+<div id="exercise">
+  <p>
+   Name: {{ name }}
+   Age: {{ age*3 }}
+  </p>
+  {{ randomNum() }}
+  <div>
+    <img v-bind:src="imagesrc" style="width:100px;height:100px">
+  </div>
+  
+  <div>
+    <input type="text" v-bind:value="name">
+  </div>
+</div>	
